@@ -1,32 +1,33 @@
-# 🚗 Sistem Informasi Fleet Maintenance & Predictive Monitoring
+# 🚗 Aplikasi Fleet Maintenance & Monitoring Mesin
 
-Sistem berbasis web yang dirancang untuk memonitor kondisi mesin kendaraan secara real-time dan melakukan prediksi potensi kerusakan berdasarkan parameter operasional seperti suhu mesin dan RPM.
+Aplikasi berbasis Python menggunakan framework **Flet** untuk memonitor kondisi mesin kendaraan dan memprediksi potensi kerusakan berdasarkan parameter suhu dan RPM.
 
-Aplikasi ini membantu perusahaan dalam melakukan **preventive maintenance** sehingga dapat mengurangi risiko kerusakan kendaraan secara mendadak.
+Sistem ini dirancang untuk membantu proses **preventive maintenance** agar kerusakan kendaraan dapat dideteksi lebih awal.
 
 ---
 
 ## 🚀 Fitur Utama
 
-- ✅ Manajemen data kendaraan
-- ✅ Monitoring suhu mesin (temperature)
+- ✅ Monitoring suhu mesin
 - ✅ Monitoring RPM mesin
-- ✅ Prediksi kerusakan mesin berdasarkan parameter
-- ✅ Notifikasi kondisi abnormal
-- ✅ Riwayat maintenance kendaraan
-- ✅ Dashboard monitoring
+- ✅ Prediksi kondisi mesin secara otomatis
+- ✅ Halaman Kelola Meisn
+- ✅ Halaman Kelola Operator
+- ✅ Halaman Kelola Log Peforma
+- ✅ Halaman Cetak Rekap Data
+- ✅ Dashboard monitoring sederhana
+- ✅ Riwayat kondisi mesin
 
 ---
 
 ## 🧠 Sistem Prediksi
 
-Sistem menggunakan pendekatan berbasis rule / model sederhana untuk menentukan kondisi mesin:
+Sistem menggunakan pendekatan **rule-based** untuk menentukan kondisi mesin berdasarkan:
 
-### Parameter:
 - Suhu mesin (°C)
-- RPM (Revolutions Per Minute)
+- RPM mesin
 
-### Contoh Analisis:
+### 📊 Klasifikasi Kondisi
 
 | Suhu | RPM | Status |
 |------|-----|--------|
@@ -37,9 +38,9 @@ Sistem menggunakan pendekatan berbasis rule / model sederhana untuk menentukan k
 
 ---
 
-## ⚠️ Contoh Prediksi Kerusakan
+## ⚠️ Prediksi Kerusakan
 
-- 🔥 Overheat → kemungkinan kerusakan radiator / pendingin
+- 🔥 Overheat → kemungkinan masalah pada radiator / sistem pendingin
 - ⚙️ RPM tinggi → potensi keausan mesin
 - 🚨 Kombinasi ekstrem → risiko kerusakan mesin serius
 
@@ -47,33 +48,26 @@ Sistem menggunakan pendekatan berbasis rule / model sederhana untuk menentukan k
 
 ## 🛠️ Teknologi yang Digunakan
 
-### Backend
-- Laravel 11
-
-### Frontend
-- Bootstrap
-- jQuery
-
-### Database
-- PostgreSQL
-
-### Pendukung
-- AJAX (real-time update)
-- DataTables
+- Python
+- Flet (UI Framework)
+- Database Mysql
+- (Opsional jika ada:)
+  - Pandas
+  - NumPy
+    
 
 ---
 
 ## 🏗️ Arsitektur Sistem
 
-- Frontend: Interface monitoring dashboard
-- Backend: Pengolahan data & logika prediksi
-- Database: Penyimpanan data kendaraan & sensor
-- Model: Rule-based decision system
+- UI: Flet (Frontend + Backend dalam satu aplikasi)
+- Logic: Python (Rule-based prediction)
+- Data: Input manual / simulasi sensor
 
 ---
 
-## ⚙️ Cara Instalasi
+## ⚙️ Cara Menjalankan Aplikasi
 
 1. Clone repository:
 ```bash
-git clone https://github.com/username/fleet-maintenance.git
+git clone https://github.com/username/fleet-maintenance-flet.git
