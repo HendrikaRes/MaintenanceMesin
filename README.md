@@ -4,7 +4,13 @@ Aplikasi berbasis Python menggunakan framework **Flet** untuk memonitor kondisi 
 
 Sistem ini dirancang untuk membantu proses **preventive maintenance** agar kerusakan kendaraan dapat dideteksi lebih awal.
 
----
+## 📸 Tampilan Aplikasi
+
+### 🔐 Halaman Login
+![Login](assets/images/login.JPG)
+
+### 📊 Dashboard
+![Dashboard](assets/images/dashboard.JPG)
 
 ## 🚀 Fitur Utama
 
